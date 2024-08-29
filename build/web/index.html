@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Home</title>
+          <link rel="stylesheet" href="css/style.css"/>
+    </head>
+    <body>
+        <h1>Home</h1>
+        
+        <button onclick="logout()">Log Out</button>
+     
+        
+        <br/><br/>
+         <div>
+             <div class="div-sub">Mobile:${sessionScope.user.mobile}</div>
+        </div>
+        
+         <div>
+             <div class="div-sub">Name:${sessionScope.user.name}</div>
+        </div>
+        
+         <div>
+             <div class="div-sub">Gender:${sessionScope.user.gender}</div>
+        </div>
+        
+         <div>
+             <div class="div-sub">Country:${sessionScope.user.country}</div>
+        </div>
+        
+        <script src="js/script.js"></script>
+    </body>
+</html>
+
